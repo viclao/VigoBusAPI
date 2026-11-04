@@ -7,7 +7,8 @@ import time
 from typing import *
 
 # # Installed # #
-from requests_async import request, Response, RequestException
+from requests_async import request
+from httpx import Response, HTTPError as RequestException
 
 # # Project # #
 from vigobusapi.settings import settings
