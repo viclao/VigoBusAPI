@@ -7,7 +7,7 @@ import asyncio
 from typing import List
 
 # # Installed # #
-from requests_async import RequestException
+from httpx import HTTPError as RequestException
 
 # # Project # #
 from vigobusapi.vigobus_getters.html.html_request import request_html
