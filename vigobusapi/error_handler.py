@@ -8,7 +8,7 @@ import asyncio
 # # Installed # #
 from fastapi import status as statuscode
 from fastapi.responses import JSONResponse
-from requests_async import RequestException, Timeout
+from httpx import HTTPError as RequestException, TimeoutException as Timeout
 
 # # Package # #
 from vigobusapi.exceptions import *
